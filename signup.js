@@ -74,6 +74,25 @@ function initClient() {
 // Function to add user data to the Google Sheets spreadsheet
 function addData(event) {
   alert('c');
+    gapi.client.sheets.spreadsheets.values.append({
+  spreadsheetId: '1hAPDte1UbSfyXh9vVJpvG6lCh80Hr3x2WzMUCS6YplE',
+  range: 'Sheet1!A1:B2',
+  valueInputOption: 'USER_ENTERED',
+  insertDataOption: 'OVERWRITE',
+  responseDateTimeRenderOption: 'SERIAL_NUMBER',
+  responseValueRenderOption: 'FORMATTED_VALUE',
+  resource: {
+    values: [
+      ['John', 25],
+      ['Jane', 30]
+    ]
+  }
+}).then(function(response) {
+  console.log(response);
+}, function(reason) {
+  console.error('Error: ' + reason.result.error.message);
+});
+
   event.preventDefault();
 
   // Get form data
