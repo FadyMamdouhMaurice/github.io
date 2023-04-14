@@ -130,15 +130,21 @@ function addData(event) {
   // Define the values to write
   var values = [[username, email, password, confirmPassword]];
 
-  // Call the Google Sheets API to append the values to the spreadsheet
-  gapi.client.sheets.spreadsheets.values.append({
-    spreadsheetId: spreadsheetId,
-    range: range,
-    valueInputOption: 'USER_ENTERED',
-    insertDataOption: 'INSERT_ROWS',
-    resource: {
-      values: values,
+// Call the Google Sheets API to append the values to the spreadsheet
+  gapi.client.request({
+    path: 'https://sheets.googleapis.com/v4/spreadsheets/' + spreadsheetId + '/values/' + range + ':append',
+    method: 'POST',
+    params: {
+      valueInputOption: 'USER_ENTERED',
+      insertDataOption: 'INSERT_ROWS',
+      key: 'AIzaSyCENIO16UoNC3fcllPbAp-lnz0AFrOkTYU'
     },
+    headers: {
+      'Content-Type': 'application/json'
+    },
+    body: {
+      values: values
+    }
   }).then(function(response) {
     console.log(response.result);
     alert('Signup Successful!');
