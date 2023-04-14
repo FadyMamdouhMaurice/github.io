@@ -115,8 +115,6 @@ function addData(event) {
         var range = sheetName + '!A' + (lastRow + 1) + ':D' + (lastRow + 1);
         alert('range:' + range);
 
-
-
   // Do something with the range, such as getting values or setting values
 
 
