@@ -56,9 +56,7 @@ window.onload = function() {
 
 // Function to initialize the Google Sheets API client
 function initClient() {
-      alert('a');
   gapi.client.init({
-        alert('aa');
     apiKey: 'AIzaSyB5kjw7yxhiEr1Fsdyh7J64s7qMztdsO1M',
     discoveryDocs: ['https://sheets.googleapis.com/$discovery/rest?version=v4'],
     clientId: '1096778665619-psu4i2nvrnl0hl383ejud4m9rdk1g1c1.apps.googleusercontent.com',
