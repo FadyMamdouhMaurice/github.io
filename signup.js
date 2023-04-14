@@ -131,4 +131,4 @@ function addData(event) {
     console.error('error: ' + reason.result.error.message);
     alert('Signup Failed!');
   });
-})
+}
