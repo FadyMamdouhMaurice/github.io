@@ -87,7 +87,7 @@ function addData(event) {
     alert('Password and Confirm Password do not match!');
     return;
   }
-
+}
   // Get the Google Sheets spreadsheet ID
   var spreadsheetId = '1hAPDte1UbSfyXh9vVJpvG6lCh80Hr3x2WzMUCS6YplE';
 
@@ -132,4 +132,4 @@ function addData(event) {
     alert('Signup Failed!');
   });
 }
-}
+
