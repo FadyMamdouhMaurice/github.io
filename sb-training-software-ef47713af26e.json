@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "sb-training-software",
+  "private_key_id": "ef47713af26e3befd1b12be0f8dd5ab7a01a8606",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQCqCpBkJLNBQ7OI\nb4mt2oBe8gUEwaKtuRHMASa53HDW4g3kYYclgQzdftPbC8O4a5eIatvrKIwCIPXo\nmmYoobu6v4gWBEZMD4MWoeOagoO1Fra/QRsChvoBvAY+2Zg4YlMlWhxoBDhGKsoV\n7/xG2U2RihuZ+oA7v9riE+j9WDZMXZBS5bVF+rPGxWnt45FajY3jRGlVMstEmyKK\n/9pT5uV4uhe5Ai38TKn5uyawDF742BzfPUpDPmvERiwtRyKVoXl6UG4VmXh9PSi7\nIiQgQtzT1iERDZFfT2cSCqWUV1/ZvpShnA4dnSBjfEnB8Yf4dD7zgz4g36SdN9Bm\nf5BJrnofAgMBAAECggEAFztB6/SvAEEu06VNfaZceIb/VDLdC3gSrDkSCz2eCwsF\nE96Wl3NQsyhN6zTpxMCqX4BzUxG4mIfb9loLOreSDZsiYsOrE7Q2LY7o/jtLoZ+c\npcz60uG8YXqeAyiOaVGsWMOSyEv0oPLdUO73Rs9kj3hQz2eP7S8ynpr9b4ja7kbM\nXMvGBrmVAowAtt5JeZX1voQ5hEbzuDPmaZAFOj4ZX1tdbcVZE9md635Uw1Ga32Rd\n0B1SvIarq9xmWCHHMz488a8Ek/LQsg9PHdS/yHJrr5LjBV9xjM8de/kplICmH7X1\nbMnPydc5aVJmwj9s6XOJfw/+Jjh4XmuzfaIpmhuOlQKBgQDg8zR3KGQF4dUq6Kfn\nNbb8TE3Y4gRV8ca62y7kc/0NnkGHLloFEmX5FpbeTF78jUzjGkkEzOgQ+cPRbRIa\nsVexwlEqN2OxrUwqGmXCEDhmAUjHV5wkMcXZbEhEJ4E3yaF8rLja0n7BUH4urTyY\nS8Caa7HRJR9os8bcXs+4a3o1wwKBgQDBgxzjcs5ZVlDt1vVUiUabmh5bfB8yDIyi\nH5EG9vGbbWdEsyhlMAZZD9AbpQ80FWHqSV/wrzUrRZAzdgFFfGUIGndK6XMNgeH9\nIeK/wnemWIcq1kriEy5eLdC+/o3Zyg21KtFfIi9yhjwCC4wvQB5yPtbu18ZuVKV2\nnXdvj1X4dQKBgAXnXCEkdjuRSb7ujDmNN1g3yHNAu0xmJAkTZ4+nW6TX2nBpzwMD\nEJoQ9bSv3G5UZwgu0GvH1O9dHr6IVklNDjgkGW06Nuua2LziJHmLY2+J6RcSPY7V\nn5OtO9hOER4dtJdJETDtBVadfjJLaaO1mUB0Qx5yEvj0fuuZsWntqC9xAoGBAImZ\neow9EX+zAd7tUAtphZyVbWquCtyi0cliWtSx+cEEfT77igjRqmHf/aH6r6HgZnya\n6i6R12PKliwRh/vp5Ulq0FKjR11ectx1IPAsDrppDswmDp9M9lafi2SUSzeHFlIx\nfSmBfG2aB8eIgIkEteGUz26MXhwL8pAyjj/0kzQVAoGBAK7w/N/XimVEm+OKDe1I\nZUoEpxQL0bkT73M5wtar86PKRDfqSZ7qFAObCGMdc+/UDuX9Kbon0P4bIcTn86k1\nz2XZEHx4KkTlta9agTOUUsyuRk7mLeu1/fEu4cvkTO+ysuvumgqetvo1vtCf2m1S\nCyMqerqZyYDJCRRst2uVx9LL\n-----END PRIVATE KEY-----\n",
+  "client_email": "sb-training-software@sb-training-software.iam.gserviceaccount.com",
+  "client_id": "107060766765844462345",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/sb-training-software%40sb-training-software.iam.gserviceaccount.com"
+}
