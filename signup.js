@@ -117,6 +117,10 @@ function addData(event) {
 
   // Call the Google Sheets API to append the values to the spreadsheet
   gapi.client.sheets.spreadsheets.values.append({
+        alert(spreadsheetId);
+        alert(range);
+        alert(values);
+
     spreadsheetId: spreadsheetId,
     range: range,
     valueInputOption: 'USER_ENTERED',
