@@ -57,9 +57,9 @@ document.addEventListener('DOMContentLoaded', function() {
 // Function to initialize the Google Sheets API client
 function initClient() {
   gapi.client.init({
-    apiKey: 'AIzaSyB5kjw7yxhiEr1Fsdyh7J64s7qMztdsO1M',
+    apiKey: 'AIzaSyCENIO16UoNC3fcllPbAp-lnz0AFrOkTYU',
     discoveryDocs: ['https://sheets.googleapis.com/$discovery/rest?version=v4'],
-    clientId: '1096778665619-psu4i2nvrnl0hl383ejud4m9rdk1g1c1.apps.googleusercontent.com',
+    clientId: '1096778665619-6hc6k2ork2l76bjkn4q5ao5n0q63v9ul.apps.googleusercontent.com',
     scope: 'https://www.googleapis.com/auth/spreadsheets',
     plugin_name: 'streamy',
     cookiepolicy: 'none' // add this line
