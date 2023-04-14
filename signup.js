@@ -61,6 +61,7 @@ function initClient() {
     discoveryDocs: ['https://sheets.googleapis.com/$discovery/rest?version=v4'],
     clientId: '1096778665619-psu4i2nvrnl0hl383ejud4m9rdk1g1c1.apps.googleusercontent.com',
     scope: 'https://www.googleapis.com/auth/spreadsheets',
+    plugin_name: 'streamy',
     cookiepolicy: 'none' // add this line
   }).then(function () {
     alert('b');
