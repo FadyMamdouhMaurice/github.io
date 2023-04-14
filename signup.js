@@ -81,7 +81,6 @@ function addData(event) {
   var email = document.getElementById('email').value;
   var password = document.getElementById('password').value;
   var confirmPassword = document.getElementById('confirm-password').value;
-    alert(username+email+password+confirmPassword);
 
   // Check if password and confirm password match
   if (password !== confirmPassword) {
@@ -91,7 +90,10 @@ function addData(event) {
 
   // Get the Google Sheets spreadsheet ID
   var spreadsheetId = '1hAPDte1UbSfyXh9vVJpvG6lCh80Hr3x2WzMUCS6YplE';
-
+ alert('sheet name:' + sheetName);
+    alert('sheet id:' + sheetId);
+    alert('LR:' + lastRow);
+    alert('LC:' + lastColumn);
   // Get the active sheet
   var sheet = gapi.client.sheets.spreadsheets.get({
     spreadsheetId: spreadsheetId,
