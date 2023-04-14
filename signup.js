@@ -89,12 +89,12 @@ function addData(event) {
   }
 
   // Get the Google Sheets spreadsheet ID
-  var spreadsheetId = '578840023';
+  var spreadsheetId = '1hAPDte1UbSfyXh9vVJpvG6lCh80Hr3x2WzMUCS6YplE';
 
   // Get the active sheet
   var sheet = gapi.client.sheets.spreadsheets.get({
     spreadsheetId: spreadsheetId,
-    range: 'Sheet1'
+    //range: 'Sheet1'
   }).then(function(response) {
     //var sheetName = response.result.sheets[0].properties.title;
     //var sheetId = response.result.sheets[0].properties.sheetId;
