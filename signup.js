@@ -105,7 +105,9 @@ function addData(event) {
     //var range = sheetName + '!A' + (lastRow + 1) + ':D' + (lastColumn);
     
   // Define the range of cells to write to
-  var range = 'Sheet1!A2:C2';
+  //var range = 'Sheet1!A2:C2';
+        var range = sheetName + '!A' + (lastRow + 1) + ':D' + (lastRow + 1);
+
 
   // Do something with the range, such as getting values or setting values
 
