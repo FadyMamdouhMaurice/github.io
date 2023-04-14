@@ -94,7 +94,7 @@ function addData(event) {
   // Get the active sheet
   var sheet = gapi.client.sheets.spreadsheets.get({
     spreadsheetId: spreadsheetId,
-    range: 'Sheet1'
+    range: 'Users'
   }).then(function(response) {
     var sheetName = response.result.sheets[0].properties.title;
     var sheetId = response.result.sheets[0].properties.sheetId;
