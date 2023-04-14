@@ -81,6 +81,7 @@ function addData(event) {
   var email = document.getElementById('email').value;
   var password = document.getElementById('password').value;
   var confirmPassword = document.getElementById('confirm-password').value;
+    alert(username+email+password+confirmPassword);
 
   // Check if password and confirm password match
   if (password !== confirmPassword) {
@@ -100,6 +101,11 @@ function addData(event) {
     var sheetId = response.result.sheets[0].properties.sheetId;
     var lastRow = response.result.sheets[0].properties.gridProperties.rowCount;
     var lastColumn = response.result.sheets[0].properties.gridProperties.columnCount;
+    alert('sheet name:' + sheetName);
+    alert('sheet id:' + sheetId);
+    alert('LR:' + lastRow);
+    alert('LC:' + lastColumn);
+
 
     // Define the range to write to
     //var range = sheetName + '!A' + (lastRow + 1) + ':D' + (lastColumn);
@@ -107,6 +113,8 @@ function addData(event) {
   // Define the range of cells to write to
   //var range = 'Sheet1!A2:C2';
         var range = sheetName + '!A' + (lastRow + 1) + ':D' + (lastRow + 1);
+        alert('range:' + range);
+
 
 
   // Do something with the range, such as getting values or setting values
@@ -117,10 +125,6 @@ function addData(event) {
 
   // Call the Google Sheets API to append the values to the spreadsheet
   gapi.client.sheets.spreadsheets.values.append({
-        alert(spreadsheetId);
-        alert(range);
-        alert(values);
-
     spreadsheetId: spreadsheetId,
     range: range,
     valueInputOption: 'USER_ENTERED',
