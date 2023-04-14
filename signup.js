@@ -65,9 +65,23 @@ function initClient() {
     //cookiepolicy: 'none' // add this line
   }).then(function () {
     alert('b');
+    
+     // Add event listener to sign in button
+    var signInButton = document.getElementById('signin');
+    signInButton.addEventListener('click', signIn);
+    
     // Add event listener to submit button
     var submitButton = document.getElementById('submit');
     submitButton.addEventListener('click', addData);
+  });
+}
+
+// Function to handle user sign-in
+function signIn() {
+  gapi.auth2.getAuthInstance().signIn().then(function() {
+    console.log('User signed in.');
+  }, function(error) {
+    console.error('Error signing in: ' + error);
   });
 }
 
