@@ -92,14 +92,17 @@ function addData(event) {
   var spreadsheetId = '1hAPDte1UbSfyXh9vVJpvG6lCh80Hr3x2WzMUCS6YplE';
 
   // Get the active sheet
-  var sheet = SpreadsheetApp.getActiveSheet();
+  var sheet = gapi.client.sheets.spreadsheets.get({
+    spreadsheetId: spreadsheetId,
+    range: 'Sheet1'
+  }).then(function(response) {
+    var sheetName = response.result.sheets[0].properties.title;
+    var sheetId = response.result.sheets[0].properties.sheetId;
+    var lastRow = response.result.sheets[0].properties.gridProperties.rowCount;
+    var lastColumn = response.result.sheets[0].properties.gridProperties.columnCount;
 
-  // Get the last row and column with data in the sheet
-  var lastRow = sheet.getLastRow();
-  var lastColumn = sheet.getLastColumn();
-
-  // Create a range using the last row and column
-  var range = sheet.getRange(1, 1, lastRow, lastColumn);
+    // Define the range to write to
+    var range = sheetName + '!A' + (lastRow + 1) + ':D' + (lastColumn);
 
   // Do something with the range, such as getting values or setting values
 
