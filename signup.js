@@ -117,7 +117,7 @@ function addData(event) {
 
 
     // Define the range to write to
-    var range ='Users';
+    var range ='Users!A2:C2';
     
   // Define the range of cells to write to
   //var range = 'Sheet1!A2:C2';
