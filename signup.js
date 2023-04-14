@@ -96,24 +96,24 @@ function addData(event) {
     spreadsheetId: spreadsheetId,
     //range: 'Sheet1'
   }).then(function(response) {
-    //var sheetName = response.result.sheets[0].properties.title;
-    //var sheetId = response.result.sheets[0].properties.sheetId;
-    //var lastRow = response.result.sheets[0].properties.gridProperties.rowCount;
-    //var lastColumn = response.result.sheets[0].properties.gridProperties.columnCount;
-    //alert('sheet name:' + sheetName);
-   // alert('sheet id:' + sheetId);
-    //alert('LR:' + lastRow);
-    //alert('LC:' + lastColumn);
+    var sheetName = response.result.sheets[0].properties.title;
+    var sheetId = response.result.sheets[0].properties.sheetId;
+    var lastRow = response.result.sheets[0].properties.gridProperties.rowCount;
+    var lastColumn = response.result.sheets[0].properties.gridProperties.columnCount;
+    alert('sheet name:' + sheetName);
+    alert('sheet id:' + sheetId);
+    alert('LR:' + lastRow);
+    alert('LC:' + lastColumn);
     
-    var sheets = response.result.sheets;
+    //var sheets = response.result.sheets;
   
   // Extract the sheet names
-  var sheetNames = sheets.map(function(sheet) {
-    return sheet.properties.title;
-  });
+  //var sheetNames = sheets.map(function(sheet) {
+    //return sheet.properties.title;
+  //});
 
-  console.log(sheetNames);
-    alert('SN:' + sheetNames);
+  //console.log(sheetNames);
+    //alert('SN:' + sheetNames);
 
 
     // Define the range to write to
