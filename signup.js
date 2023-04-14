@@ -102,7 +102,10 @@ function addData(event) {
     var lastColumn = response.result.sheets[0].properties.gridProperties.columnCount;
 
     // Define the range to write to
-    var range = sheetName + '!A' + (lastRow + 1) + ':D' + (lastColumn);
+    //var range = sheetName + '!A' + (lastRow + 1) + ':D' + (lastColumn);
+    
+  // Define the range of cells to write to
+  var range = 'Users!A1:D1';
 
   // Do something with the range, such as getting values or setting values
 
