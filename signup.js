@@ -132,3 +132,4 @@ function addData(event) {
     alert('Signup Failed!');
   });
   });
+}
