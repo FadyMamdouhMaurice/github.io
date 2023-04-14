@@ -92,7 +92,7 @@ function addData(event) {
   var spreadsheetId = '1hAPDte1UbSfyXh9vVJpvG6lCh80Hr3x2WzMUCS6YplE';
 
   // Get the active sheet
-  var sheet = gapi.client.sheets.spreadsheets.get({
+  /*var sheet = gapi.client.sheets.spreadsheets.get({
     spreadsheetId: spreadsheetId,
     //range: 'Sheet1'
   }).then(function(response) {
@@ -104,7 +104,7 @@ function addData(event) {
     alert('sheet id:' + sheetId);
     alert('LR:' + lastRow);
     alert('LC:' + lastColumn);
-    
+    */
     //var sheets = response.result.sheets;
   
   // Extract the sheet names
@@ -117,7 +117,7 @@ function addData(event) {
 
 
     // Define the range to write to
-    //var range = sheetName + '!A' + (lastRow + 1) + ':D' + (lastColumn);
+    var range ='Users';
     
   // Define the range of cells to write to
   //var range = 'Sheet1!A2:C2';
@@ -128,7 +128,7 @@ function addData(event) {
 
 
   // Define the values to write
-  //var values = [[username, email, password, confirmPassword]];
+  var values = [[username, email, password, confirmPassword]];
 
   // Call the Google Sheets API to append the values to the spreadsheet
   gapi.client.sheets.spreadsheets.values.append({
