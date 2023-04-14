@@ -50,9 +50,9 @@ jwtClient.authorize(function(err, tokens) {
 
 */
 // Load the Google API client library
-window.onload = function() {
+document.addEventListener('DOMContentLoaded', function() {
   gapi.load('client', initClient);
-};
+});
 
 // Function to initialize the Google Sheets API client
 function initClient() {
