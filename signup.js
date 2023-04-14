@@ -94,7 +94,7 @@ function addData(event) {
   // Get the active sheet
   var sheet = gapi.client.sheets.spreadsheets.get({
     spreadsheetId: spreadsheetId,
-    range: 'Users'
+    range: 'Sheet1'
   }).then(function(response) {
     var sheetName = response.result.sheets[0].properties.title;
     var sheetId = response.result.sheets[0].properties.sheetId;
@@ -105,7 +105,7 @@ function addData(event) {
     //var range = sheetName + '!A' + (lastRow + 1) + ':D' + (lastColumn);
     
   // Define the range of cells to write to
-  var range = 'Users!A1:D1';
+  var range = 'Sheet1!A2:C2';
 
   // Do something with the range, such as getting values or setting values
 
